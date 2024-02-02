@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(24, 21%, 33%);
+    color: black;
+    font-size: 1.1rem;
+}   
+
+form{
+    background-color: hsl(24, 47%, 67%);
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+fieldset{
+    border: none;
+}
+
+#title{
+    color: black;
+    text-align: center;
+}
+
+#description{
+    color: white;
+    text-align: center;     
+}
+
+.block{
+    display: block;
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
+
+.fields{
+    margin-bottom: 15px;
+    margin-left: 10px;
+    width: 95%;
+    height: 25px;
+}
+
+.radio-class, .checkbox-class{
+    display: block;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+label[for="dropdown"], label[id="checkbox-label"]{
+    margin-left: 10px;
+}
+
+select{
+    background-color: hsl(24, 21%, 33%);
+    color: white;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 25px;
+    width: 95%;
+}
+
+textarea{
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 95%;
+    background-color: hsl(24, 21%, 33%);
+    color: white;
+}
+
+input[type="submit"]{
+    font-size: 1em;
+    width: 90%;
+    margin-top: 30px;
+    margin-left: 25px;
+    height: 30px;
+    border: 2px solid black;
+    background-color: hsl(24, 21%, 33%);
+}
+
+input{
+    background-color: hsl(24, 21%, 33%);
+    color: white;
+}
+
+input::placeholder{
+    color: white;
+}
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+    <h1 id="title">coffeeBlack Survey Form</h1>
+
+    <form id="survey-form">
+        <fieldset>
+            <label class="block" for="name" id="name-label"><b>Name</b></label>
+            <input class="fields" id="name" type="text" placeholder="Enter Your Full Name" required>
+            <label class="block" for="email" id="email-label"><b>Email</b></label>
+            <input class="fields" id="email" type="email" placeholder="abc@gmail.com" required>
+            <label class="block" for="number" id="number-label">Age (optional)</label>
+            <input class="fields" id="number" type="number" max="120" min="0" placeholder="Enter Your Age">
+            <label class="block" for="rating" id="number-label">What would you rate our store?</label>
+            <input class="fields" id="rating" type="number" max="10" min="0" value="5">
+        </fieldset>
+        <fieldset>
+            <label class="block">Would you recommend this cafe to a friend?</label>
+            <div class="radio-class">
+            <input name="recommend-store" id="recommend-store" type="radio" value="2">
+            <label for="recommend-store">Definitely</label>
+            </div>
+            <div class="radio-class">
+            <input name="recommend-store" id="recommend-store" type="radio" value="1" checked>
+            <label for="recommend-store">Maybe</label>
+            </div>
+            <div class="radio-class">
+            <input name="recommend-store" id="recommend-store" type="radio" value="0" >
+            <label for="recommend-store">No</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">What is your favorite item-category on our menu?</label>
+            <select id="dropdown">
+                <option value="">Select Your Choice</option>
+                <option value=1>Beverages</option>
+                <option value=2>Desserts</option>
+                <option value=3>Snacks</option>
+                <option value=4>Breakfast Menu</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label id="checkbox-label">What would you like to see improved? <small>(check all that apply)</small></label>
+            <div class="checkbox-class">
+            <input type="checkbox" id="op1" value="More B">
+                <label for="op1">More Beverages?</label>
+            </div>
+            <div class="checkbox-class">
+                <input type="checkbox" id="op2" value="More D">
+                <label for="op2">More Desserts?</label>
+            </div>
+            <div class="checkbox-class">
+
+                <input type="checkbox" id="op3" value="More S">
+                <label for="op3">More Snacks?</label>
+            </div>
+            <div class="checkbox-class">
+
+                <input type="checkbox" id="op4" value="More I">
+                <label for="op4">More Items?</label>
+            </div>
+            <div class="checkbox-class">
+
+                <input type="checkbox" id="op5" value="More SD">
+                <label for="op5">More Special Drinks?</label>
+            </div>
+            <div class="checkbox-class">
+
+                <input type="checkbox" id="op6" value="More BO">
+                <label for="op6">More Cold Beverage Options?</label>
+            </div>
+            <div class="checkbox-class">
+
+                <input type="checkbox" id="op7" value="More SP">
+                <label for="op7">More Snack Options?</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <label class="block" for="comments">Any comments or suggestions?</label>
+            <textarea id="comments" rows=4 cols=58></textarea>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+    <p id="description"><i>Thank You for your feedback! It helps us improve our customer service</i></p>
+</body>
+</html>
